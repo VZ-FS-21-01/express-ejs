@@ -1,0 +1,16 @@
+<%- include('./partials/head') %>
+
+
+    <h1>Home</h1>
+    <% const name="Superman" %>
+        <% const isLoggedIn=true %>
+
+            <h2>
+                <% if (isLoggedIn) { %>
+                    <%= name %>
+                        <% } else { %>
+                            Not logged in
+                            <% } %>
+            </h2>
+
+            <%- include('./partials/footer') %>
